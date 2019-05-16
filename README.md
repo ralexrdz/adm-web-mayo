@@ -10,3 +10,4 @@
 
 [Libro de Aprendiz de Software](http://the-software-apprentice.makingdevs.com)
 
+![img](https://i.redd.it/hrpsdbh03zp01.png)
