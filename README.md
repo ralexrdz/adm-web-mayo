@@ -4,6 +4,12 @@
 
 1. Introducción a la programación
 
+2. Variables
+
+  2.1. Ejercicios
+  
+   - [Ejericicio 1](https://github.com/ralexrdz/adm-web-mayo/blob/master/ejercicio-variables.js)
+
 ## Refererncias
 
 [Manual Curso Web](https://github.com/mayela/manual-curso-codeandomx)
