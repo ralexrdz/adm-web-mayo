@@ -16,4 +16,4 @@
 
 [Libro de Aprendiz de Software](http://the-software-apprentice.makingdevs.com)
 
-![img](https://i.redd.it/hrpsdbh03zp01.png)
+[Herramientas de Coder](https://github.com/ralexrdz/ADMDesarrolloWeb/wiki)
