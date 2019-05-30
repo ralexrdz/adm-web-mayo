@@ -76,24 +76,43 @@ if (x == 1) {
 } 
 
 let persona = {
-  name: 'Raul Rodriguez',
-  hobbies: ['bici', 'videojuego', 'futbol']
+  name: 'Raul Rodriguez ',
+  hobbies: []
 }
 
-// si el nombre de la persona es más grande que 20 caracteres
-// notifica que es muy grande
 
 // investigo como cortar palabras en una frase STRING
 
+let str = 'abracadabra'
+str.split('a') // => ['', br', 'c', 'd', 'br', '' ]
+str.split('b') // => ["a", "racada", "ra"]
+
+
+// si el nombre de la persona es más grande que 20 caracteres
+// notifica que es muy grande
 // Imprime solo el primer nombre y escribe
   // si no tiene hobies
     // escribe 'Raul no tiene hobbies'
   // si tiene solo un hobie
-    // escribe 'Raul hace <nombre hobie>
+    // escribe 'Raul hace <nombre hobie>'
   // si toene varios
     // escribe 'Raul tiene <# hobies> hobies'
 
-    
+if (persona.name.length > 20) {
+  console.log('el nombre es muy grande')
+} else {
+  let nombres = persona.name.split(' ') // ['Raul', 'Rodriguez']
+  let primerNombre = nombres[0]
+  if ( ! persona.hobbies || persona.hobbies.length == 0 ) {
+    console.log(primerNombre + ' no tiene hobies')
+  } else if (persona.hobbies.length == 1) {
+    console.log(primerNombre + ' hace ' + persona.hobbies[0])
+  } else {
+    console.log(primerNombre + ' tiene ' + persona.hobbies.length + ' hobbies')
+  }
+}
+
+
 
 
 
