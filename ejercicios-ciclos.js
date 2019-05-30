@@ -66,20 +66,27 @@ let persona = {
     // escribe 'Raul hace <nombre hobie3>'
   // si toene varios
 
-    // TAREA escribe 'Raul hace <hobie1>, <hobbie2>, ... , <hobieN>'
-
-if (persona.name.length > 20) {
-  console.log('el nombre es muy grande')
-} else {
-  let nombres = persona.name.split(' ') // ['Raul', 'Rodriguez']
-  let primerNombre = nombres[0]
-  if ( ! persona.hobbies || persona.hobbies.length == 0 ) {
-    console.log(primerNombre + ' no tiene hobies')
-  } else if (persona.hobbies.length == 1) {
-    console.log(primerNombre + ' hace ' + persona.hobbies[0])
+  
+  if (persona.name.length > 20) {
+    console.log('el nombre es muy grande')
   } else {
-
-    // AQUI
+    let nombres = persona.name.split(' ') // ['Raul', 'Rodriguez']
+    let primerNombre = nombres[0]
+    if ( ! persona.hobbies || persona.hobbies.length == 0 ) {
+      console.log(primerNombre + ' no tiene hobies')
+    } else if (persona.hobbies.length == 1) {
+      console.log(primerNombre + ' hace ' + persona.hobbies[0])
+    } else {
+      
+      // AQUI
+      // TAREA nivel 1 
+      // escribe 'Raul hace <nombre hobie0>'
+      // escribe 'Raul hace <nombre hobie1>'
+      // escribe 'Raul hace <nombre hobie2>'
+      // escribe 'Raul hace <nombre hobie3>'
+      
+      // TAREA nivel 2 
+      // 'Raul hace <hobie1>, <hobbie2>, ... , <hobieN>'
 
     console.log(primerNombre + ' hace ' + persona.hobbies.length + ' hobbies')
   }
