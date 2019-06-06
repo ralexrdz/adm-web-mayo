@@ -51,7 +51,34 @@ for (let i = 0; i < unArreglo.length; i++) {
 
 let persona = {
   name: 'Raul Rodriguez ',
-  hobbies: ['bici', 'fiesta', 'videojuegos']
+  hobbies: ['bici', 'fiesta', 'videojuegos', 'clases', 'viajes']
+}
+let persona2 = {
+  name: 'Gabriel Perez ',
+  hobbies: ['patinaje', 'yoga', 'comer', 'fiesta', 'cine']
+}
+
+function imprimeHobies (persona) {
+  let primernombre = damePrimerNombre(persona.name)
+  let hobbiesString = ''
+  let conjuncion = ', '
+  for (let index = 0; index < persona.hobbies.length; index++) {
+    console.log('Raul hace ' + persona.hobbies[index])
+    if (index === persona.hobbies.length-2 ) {
+      conjuncion = ' y '
+    }
+    if (index === persona.hobbies.length-1 ) {
+      conjuncion = ''
+    }
+    hobbiesString += persona.hobbies[index] + conjuncion 
+  }
+  return  primernombre + ' hace' + hobbiesString 
+
+}
+
+
+function damePrimerNombre (nombreCompleto) {
+  return nombreCompleto.split(' ')[0]
 }
 
 // si el nombre de la persona es más grande que 20 caracteres
@@ -70,7 +97,7 @@ let persona = {
   if (persona.name.length > 20) {
     console.log('el nombre es muy grande')
   } else {
-    let nombres = persona.name.split(' ') // ['Raul', 'Rodriguez']
+    let nombres = damePrimerNombre(persona.name) // ['Raul', 'Rodriguez']
     let primerNombre = nombres[0]
     if ( ! persona.hobbies || persona.hobbies.length == 0 ) {
       console.log(primerNombre + ' no tiene hobies')
@@ -78,19 +105,14 @@ let persona = {
       console.log(primerNombre + ' hace ' + persona.hobbies[0])
     } else {
       
-      // AQUI
-      // TAREA nivel 1 
-      // escribe 'Raul hace <nombre hobie0>'
-      // escribe 'Raul hace <nombre hobie1>'
-      // escribe 'Raul hace <nombre hobie2>'
-      // escribe 'Raul hace <nombre hobie3>'
       
-      // TAREA nivel 2 
-      // 'Raul hace <hobie1>, <hobbie2>, ... , <hobieN>'
-
-    console.log(primerNombre + ' hace ' + persona.hobbies.length + ' hobbies')
+      let result = imprimeHobies(persona)
+      console.log(result)
+    
   }
 }
+
+console.log(imprimeHobies(persona2))
 
 
 
