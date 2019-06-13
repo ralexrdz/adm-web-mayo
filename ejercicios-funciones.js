@@ -66,3 +66,18 @@ console.log(sumaOConcatenacion(['asd', 'qwe', 'ert', 'ower']))
 // y me regrese la primera letra de cada palabra
 
 // Ej: ''
+
+let frase = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique obcaecati tenetur, repellat iste illo dolor pariatur blanditiis dignissimos labore, modi error deserunt eius quibusdam necessitatibus iure quaerat numquam dolorem doloribus ab maxime excepturi veniam voluptatum animi! Mollitia, quo nam!'
+
+let palabras = frase.split(' ')
+
+console.log('palabras', palabras)
+
+let auxPalabra = null
+let siglas = ''
+
+for (let index = 0; index < palabras.length; index++) {
+  auxPalabra = palabras[index]
+  siglas = siglas + auxPalabra[0]  
+}
+console.log(siglas)
