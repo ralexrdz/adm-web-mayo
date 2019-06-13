@@ -78,6 +78,19 @@ let siglas = ''
 
 for (let index = 0; index < palabras.length; index++) {
   auxPalabra = palabras[index]
-  siglas = siglas + auxPalabra[0]  
+  console.log( obtenVocales(auxPalabra) )
+  // siglas = siglas + auxPalabra[ auxPalabra.length - 1 ] 
+  // siglas = siglas + auxPalabra[     0     ]  
 }
 console.log(siglas)
+
+function obtenVocales(palabra) {
+  // palabra = 'muercielago'
+  vocales = ''
+  // MAGIA
+
+  //
+  // volcaes => 'ueieao'
+  return vocales
+}
+
