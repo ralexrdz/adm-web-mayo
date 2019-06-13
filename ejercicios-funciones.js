@@ -67,7 +67,7 @@ console.log(sumaOConcatenacion(['asd', 'qwe', 'ert', 'ower']))
 
 // Ej: ''
 
-let frase = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique obcaecati tenetur, repellat iste illo dolor pariatur blanditiis dignissimos labore, modi error deserunt eius quibusdam necessitatibus iure quaerat numquam dolorem doloribus ab maxime excepturi veniam voluptatum animi! Mollitia, quo nam!'
+let frase = 'Lorem ipsum, Olor sit amet consectetur adipisicing elit. Perferendis similique obcaecati tenetur, repellat iste illo dolor pariatur blanditiis dignissimos labore, modi error deserunt eius quibusdam necessitatibus iure quaerat numquam dolorem doloribus ab maxime excepturi veniam voluptatum animi! Mollitia, quo nam!'
 
 let palabras = frase.split(' ')
 
@@ -85,12 +85,33 @@ for (let index = 0; index < palabras.length; index++) {
 console.log(siglas)
 
 function obtenVocales(palabra) {
+  // console.log('palabra:', palabra);
+  
   // palabra = 'muercielago'
-  vocales = ''
-  // MAGIA
+  let vocales = ''
+  // MAGIA 
+
+  // recorro la palabra letra por letra 
+  for (let posLetra = 0; posLetra < palabra.length; posLetra++) {
+    if (
+      palabra[posLetra] == 'a' ||
+      palabra[posLetra] == 'e' ||
+      palabra[posLetra] == 'i' ||
+      palabra[posLetra] == 'o' ||
+      palabra[posLetra] == 'u' ||
+      palabra[posLetra] == 'A' ||
+      palabra[posLetra] == 'E' ||
+      palabra[posLetra] == 'I' ||
+      palabra[posLetra] == 'O' ||
+      palabra[posLetra] == 'U'
+    ) {
+      vocales = vocales + palabra[posLetra]
+    } 
+  }
 
   //
   // volcaes => 'ueieao'
+  // console.log('vocales', vocales)
   return vocales
 }
 
